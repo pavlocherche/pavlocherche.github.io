@@ -24,10 +24,20 @@
       height: 80vh;
     }
 
-    #globeViz {
-      width: 400px;
-      height: 400px;
-    }
+      #globeViz {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;            /* 🔥 important fix */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  canvas {
+    display: block;            /* 🔥 removes weird spacing */
+    margin: auto;              /* 🔥 centers the actual globe */
+  }
+    
   </style>
 </head>
 
